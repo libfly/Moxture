@@ -373,7 +373,7 @@ the hood to produce values based on a specific label, it has same guarantees as 
 
 Mocks and fixtures can be easily combined with each other:
 
-```
+```swift
 final class ExampleTests: XCTestCase {
     func testExample() {
         // given

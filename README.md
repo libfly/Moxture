@@ -1,4 +1,6 @@
-![logo](./README/logo.png)
+<p align="center">
+  <img src="README/logo.png" height="300">
+</p>
 
 Mocks + Fixtures for Swift. Testing is now even easier. Powered by generics.
 

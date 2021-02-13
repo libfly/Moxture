@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		525F7DA825D7F4F90011AE4F /* MakeFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F7DA725D7F4F90011AE4F /* MakeFixture.swift */; };
+		525F7DAC25D7F50B0011AE4F /* FuncMock+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F7DAB25D7F50B0011AE4F /* FuncMock+Init.swift */; };
+		525F7DB025D7F51B0011AE4F /* FuncMock+Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F7DAF25D7F51B0011AE4F /* FuncMock+Void.swift */; };
+		525F7DB425D7F52A0011AE4F /* FuncMock+Fixturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F7DB325D7F52A0011AE4F /* FuncMock+Fixturable.swift */; };
+		525F7DB825D7F7400011AE4F /* PropMock+Fixturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F7DB725D7F7400011AE4F /* PropMock+Fixturable.swift */; };
+		525F7DBE25D7F74B0011AE4F /* PropMock+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F7DBD25D7F74B0011AE4F /* PropMock+Init.swift */; };
+		52FB272425D532A5003DC5F5 /* Moxture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB271A25D532A5003DC5F5 /* Moxture.framework */; };
+		52FB272B25D532A6003DC5F5 /* Moxture.h in Headers */ = {isa = PBXBuildFile; fileRef = 52FB271D25D532A5003DC5F5 /* Moxture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52FB275A25D537ED003DC5F5 /* FuncMockCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB275925D537ED003DC5F5 /* FuncMockCommonTests.swift */; };
+		52FB276225D54094003DC5F5 /* FuncMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB276125D54094003DC5F5 /* FuncMock.swift */; };
+		52FB276625D5409C003DC5F5 /* PropMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB276525D5409C003DC5F5 /* PropMock.swift */; };
+		52FB276A25D540AB003DC5F5 /* Fixturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB276925D540AB003DC5F5 /* Fixturable.swift */; };
+		52FB277425D54DC4003DC5F5 /* AnyFuncMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB277325D54DC4003DC5F5 /* AnyFuncMock.swift */; };
+		52FB277C25D63616003DC5F5 /* FuncMockArgTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB277B25D63616003DC5F5 /* FuncMockArgTests.swift */; };
+		52FB278025D63629003DC5F5 /* FuncMockArgOptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB277F25D63629003DC5F5 /* FuncMockArgOptTests.swift */; };
+		52FB278425D63638003DC5F5 /* FuncMockArgThrowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB278325D63638003DC5F5 /* FuncMockArgThrowsTests.swift */; };
+		52FB278825D63649003DC5F5 /* FuncMockArgOptThrowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB278725D63649003DC5F5 /* FuncMockArgOptThrowsTests.swift */; };
+		52FB279025D657D6003DC5F5 /* PropMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB278F25D657D6003DC5F5 /* PropMockTests.swift */; };
+		52FB279425D66A1A003DC5F5 /* AnyFuncMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB279325D66A1A003DC5F5 /* AnyFuncMockTests.swift */; };
+		52FB279C25D68776003DC5F5 /* BasicTypes+Fixturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB279B25D68776003DC5F5 /* BasicTypes+Fixturable.swift */; };
+		52FB27A225D688DC003DC5F5 /* Containers+Fixturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB27A125D688DC003DC5F5 /* Containers+Fixturable.swift */; };
+		52FB27A825D69AF8003DC5F5 /* FixturableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB27A725D69AF8003DC5F5 /* FixturableTests.swift */; };
+		52FB27AC25D6A412003DC5F5 /* FixturableContainersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB27AB25D6A412003DC5F5 /* FixturableContainersTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52FB272525D532A5003DC5F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FB271125D532A5003DC5F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FB271925D532A5003DC5F5;
+			remoteInfo = Moxture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		525F7DA725D7F4F90011AE4F /* MakeFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFixture.swift; sourceTree = "<group>"; };
+		525F7DAB25D7F50B0011AE4F /* FuncMock+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FuncMock+Init.swift"; sourceTree = "<group>"; };
+		525F7DAF25D7F51B0011AE4F /* FuncMock+Void.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FuncMock+Void.swift"; sourceTree = "<group>"; };
+		525F7DB325D7F52A0011AE4F /* FuncMock+Fixturable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FuncMock+Fixturable.swift"; sourceTree = "<group>"; };
+		525F7DB725D7F7400011AE4F /* PropMock+Fixturable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PropMock+Fixturable.swift"; sourceTree = "<group>"; };
+		525F7DBD25D7F74B0011AE4F /* PropMock+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PropMock+Init.swift"; sourceTree = "<group>"; };
+		52FB271A25D532A5003DC5F5 /* Moxture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moxture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FB271D25D532A5003DC5F5 /* Moxture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Moxture.h; sourceTree = "<group>"; };
+		52FB271E25D532A5003DC5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FB272325D532A5003DC5F5 /* MoxtureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoxtureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FB272A25D532A5003DC5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FB275925D537ED003DC5F5 /* FuncMockCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncMockCommonTests.swift; sourceTree = "<group>"; };
+		52FB276125D54094003DC5F5 /* FuncMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncMock.swift; sourceTree = "<group>"; };
+		52FB276525D5409C003DC5F5 /* PropMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropMock.swift; sourceTree = "<group>"; };
+		52FB276925D540AB003DC5F5 /* Fixturable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixturable.swift; sourceTree = "<group>"; };
+		52FB277325D54DC4003DC5F5 /* AnyFuncMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyFuncMock.swift; sourceTree = "<group>"; };
+		52FB277B25D63616003DC5F5 /* FuncMockArgTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncMockArgTests.swift; sourceTree = "<group>"; };
+		52FB277F25D63629003DC5F5 /* FuncMockArgOptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncMockArgOptTests.swift; sourceTree = "<group>"; };
+		52FB278325D63638003DC5F5 /* FuncMockArgThrowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncMockArgThrowsTests.swift; sourceTree = "<group>"; };
+		52FB278725D63649003DC5F5 /* FuncMockArgOptThrowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncMockArgOptThrowsTests.swift; sourceTree = "<group>"; };
+		52FB278F25D657D6003DC5F5 /* PropMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropMockTests.swift; sourceTree = "<group>"; };
+		52FB279325D66A1A003DC5F5 /* AnyFuncMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyFuncMockTests.swift; sourceTree = "<group>"; };
+		52FB279B25D68776003DC5F5 /* BasicTypes+Fixturable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasicTypes+Fixturable.swift"; sourceTree = "<group>"; };
+		52FB27A125D688DC003DC5F5 /* Containers+Fixturable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Containers+Fixturable.swift"; sourceTree = "<group>"; };
+		52FB27A725D69AF8003DC5F5 /* FixturableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturableTests.swift; sourceTree = "<group>"; };
+		52FB27AB25D6A412003DC5F5 /* FixturableContainersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturableContainersTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52FB271725D532A5003DC5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FB272025D532A5003DC5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FB272425D532A5003DC5F5 /* Moxture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52FB271025D532A5003DC5F5 = {
+			isa = PBXGroup;
+			children = (
+				52FB271C25D532A5003DC5F5 /* Moxture */,
+				52FB272725D532A5003DC5F5 /* MoxtureTests */,
+				52FB271B25D532A5003DC5F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52FB271B25D532A5003DC5F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FB271A25D532A5003DC5F5 /* Moxture.framework */,
+				52FB272325D532A5003DC5F5 /* MoxtureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52FB271C25D532A5003DC5F5 /* Moxture */ = {
+			isa = PBXGroup;
+			children = (
+				52FB271D25D532A5003DC5F5 /* Moxture.h */,
+				52FB277325D54DC4003DC5F5 /* AnyFuncMock.swift */,
+				52FB279B25D68776003DC5F5 /* BasicTypes+Fixturable.swift */,
+				52FB27A125D688DC003DC5F5 /* Containers+Fixturable.swift */,
+				52FB276925D540AB003DC5F5 /* Fixturable.swift */,
+				52FB276125D54094003DC5F5 /* FuncMock.swift */,
+				525F7DB325D7F52A0011AE4F /* FuncMock+Fixturable.swift */,
+				525F7DAB25D7F50B0011AE4F /* FuncMock+Init.swift */,
+				525F7DAF25D7F51B0011AE4F /* FuncMock+Void.swift */,
+				525F7DA725D7F4F90011AE4F /* MakeFixture.swift */,
+				52FB276525D5409C003DC5F5 /* PropMock.swift */,
+				525F7DB725D7F7400011AE4F /* PropMock+Fixturable.swift */,
+				525F7DBD25D7F74B0011AE4F /* PropMock+Init.swift */,
+				52FB271E25D532A5003DC5F5 /* Info.plist */,
+			);
+			path = Moxture;
+			sourceTree = "<group>";
+		};
+		52FB272725D532A5003DC5F5 /* MoxtureTests */ = {
+			isa = PBXGroup;
+			children = (
+				52FB279325D66A1A003DC5F5 /* AnyFuncMockTests.swift */,
+				52FB27AB25D6A412003DC5F5 /* FixturableContainersTests.swift */,
+				52FB27A725D69AF8003DC5F5 /* FixturableTests.swift */,
+				52FB277F25D63629003DC5F5 /* FuncMockArgOptTests.swift */,
+				52FB278725D63649003DC5F5 /* FuncMockArgOptThrowsTests.swift */,
+				52FB277B25D63616003DC5F5 /* FuncMockArgTests.swift */,
+				52FB278325D63638003DC5F5 /* FuncMockArgThrowsTests.swift */,
+				52FB275925D537ED003DC5F5 /* FuncMockCommonTests.swift */,
+				52FB278F25D657D6003DC5F5 /* PropMockTests.swift */,
+				52FB272A25D532A5003DC5F5 /* Info.plist */,
+			);
+			path = MoxtureTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52FB271525D532A5003DC5F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FB272B25D532A6003DC5F5 /* Moxture.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		52FB271925D532A5003DC5F5 /* Moxture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FB272E25D532A6003DC5F5 /* Build configuration list for PBXNativeTarget "Moxture" */;
+			buildPhases = (
+				52FB271525D532A5003DC5F5 /* Headers */,
+				52FB271625D532A5003DC5F5 /* Sources */,
+				52FB271725D532A5003DC5F5 /* Frameworks */,
+				52FB271825D532A5003DC5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moxture;
+			productName = Moxture;
+			productReference = 52FB271A25D532A5003DC5F5 /* Moxture.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52FB272225D532A5003DC5F5 /* MoxtureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FB273125D532A6003DC5F5 /* Build configuration list for PBXNativeTarget "MoxtureTests" */;
+			buildPhases = (
+				52FB271F25D532A5003DC5F5 /* Sources */,
+				52FB272025D532A5003DC5F5 /* Frameworks */,
+				52FB272125D532A5003DC5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FB272625D532A5003DC5F5 /* PBXTargetDependency */,
+			);
+			name = MoxtureTests;
+			productName = MoxtureTests;
+			productReference = 52FB272325D532A5003DC5F5 /* MoxtureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52FB271125D532A5003DC5F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					52FB271925D532A5003DC5F5 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					52FB272225D532A5003DC5F5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 52FB271425D532A5003DC5F5 /* Build configuration list for PBXProject "Moxture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52FB271025D532A5003DC5F5;
+			productRefGroup = 52FB271B25D532A5003DC5F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52FB271925D532A5003DC5F5 /* Moxture */,
+				52FB272225D532A5003DC5F5 /* MoxtureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52FB271825D532A5003DC5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FB272125D532A5003DC5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52FB271625D532A5003DC5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FB276625D5409C003DC5F5 /* PropMock.swift in Sources */,
+				52FB276A25D540AB003DC5F5 /* Fixturable.swift in Sources */,
+				52FB276225D54094003DC5F5 /* FuncMock.swift in Sources */,
+				525F7DAC25D7F50B0011AE4F /* FuncMock+Init.swift in Sources */,
+				525F7DBE25D7F74B0011AE4F /* PropMock+Init.swift in Sources */,
+				52FB279C25D68776003DC5F5 /* BasicTypes+Fixturable.swift in Sources */,
+				525F7DA825D7F4F90011AE4F /* MakeFixture.swift in Sources */,
+				52FB277425D54DC4003DC5F5 /* AnyFuncMock.swift in Sources */,
+				525F7DB825D7F7400011AE4F /* PropMock+Fixturable.swift in Sources */,
+				52FB27A225D688DC003DC5F5 /* Containers+Fixturable.swift in Sources */,
+				525F7DB025D7F51B0011AE4F /* FuncMock+Void.swift in Sources */,
+				525F7DB425D7F52A0011AE4F /* FuncMock+Fixturable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FB271F25D532A5003DC5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FB27AC25D6A412003DC5F5 /* FixturableContainersTests.swift in Sources */,
+				52FB279025D657D6003DC5F5 /* PropMockTests.swift in Sources */,
+				52FB27A825D69AF8003DC5F5 /* FixturableTests.swift in Sources */,
+				52FB279425D66A1A003DC5F5 /* AnyFuncMockTests.swift in Sources */,
+				52FB277C25D63616003DC5F5 /* FuncMockArgTests.swift in Sources */,
+				52FB278825D63649003DC5F5 /* FuncMockArgOptThrowsTests.swift in Sources */,
+				52FB278425D63638003DC5F5 /* FuncMockArgThrowsTests.swift in Sources */,
+				52FB278025D63629003DC5F5 /* FuncMockArgOptTests.swift in Sources */,
+				52FB275A25D537ED003DC5F5 /* FuncMockCommonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52FB272625D532A5003DC5F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FB271925D532A5003DC5F5 /* Moxture */;
+			targetProxy = 52FB272525D532A5003DC5F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52FB272C25D532A6003DC5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		52FB272D25D532A6003DC5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		52FB272F25D532A6003DC5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Moxture/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moxture.Moxture;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		52FB273025D532A6003DC5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Moxture/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moxture.Moxture;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		52FB273225D532A6003DC5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoxtureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moxture.MoxtureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52FB273325D532A6003DC5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoxtureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moxture.MoxtureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52FB271425D532A5003DC5F5 /* Build configuration list for PBXProject "Moxture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FB272C25D532A6003DC5F5 /* Debug */,
+				52FB272D25D532A6003DC5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FB272E25D532A6003DC5F5 /* Build configuration list for PBXNativeTarget "Moxture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FB272F25D532A6003DC5F5 /* Debug */,
+				52FB273025D532A6003DC5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FB273125D532A6003DC5F5 /* Build configuration list for PBXNativeTarget "MoxtureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FB273225D532A6003DC5F5 /* Debug */,
+				52FB273325D532A6003DC5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52FB271125D532A5003DC5F5 /* Project object */;
+}

@@ -2,6 +2,8 @@
   <img src="README/logo.png" height="300">
 </p>
 
+# Moxture
+
 Mocks + Fixtures for Swift. Testing is now even easier. Powered by generics.
 
 Mocking is a process used in unit testing when the unit being tested has external dependencies. The purpose of mocking
@@ -9,8 +11,6 @@ is to isolate and focus on the code being tested and not on the behavior or stat
 
 A test fixture is a fixed state of a set of objects used as a baseline for running tests. The purpose of a test fixture
 is to ensure that there is a well known and fixed environment in which tests are run so that results are repeatable.
-
-## Features
 
 - ✅ Dedicated mock instances for functions and properties. This means it can be used both for mocking protocols and
 classes. Generic functions are also supported.

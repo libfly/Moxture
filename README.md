@@ -237,6 +237,8 @@ final class ExampleTests: XCTestCase {
         // given
 
         let mock = ExampleMock()
+        // return value must be set
+        mock.updateFunc.returns = 123
         let sut = SystemUnderTest(example: mock)
 
         // when

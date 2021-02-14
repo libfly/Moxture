@@ -28,13 +28,15 @@ public struct FuncMock<Args, Return> {
     }
 
     public mutating func callThrows(_ args: Args) throws -> Return {
+        let result: Return = call(args)
         if let error = self.throws { throw error }
-        return call(args)
+        return result
     }
 
     public mutating func callThrows(_ args: Args) throws -> Return? {
+        let result: Return? = call(args)
         if let error = self.throws { throw error }
-        return call(args)
+        return result
     }
 
     public mutating func onCall(_ closure: @escaping (Args) -> Void) {

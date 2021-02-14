@@ -14,11 +14,21 @@ public extension FuncMock where Return == Void {
         calls.append(args)
         onCall?(args)
     }
+
+    mutating func callThrows(_ args: Args) throws {
+        call(args)
+        if let error = self.throws { throw error }
+    }
 }
 
 public extension FuncMock where Args == Void, Return == Void {
     mutating func call() {
         calls.append(())
         onCall?(())
+    }
+
+    mutating func callThrows() throws {
+        call()
+        if let error = self.throws { throw error }
     }
 }

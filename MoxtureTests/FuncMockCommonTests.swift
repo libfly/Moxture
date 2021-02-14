@@ -30,10 +30,12 @@ final class FuncMockCommonTests: XCTestCase {
 
     func testThrows() {
         // given
+        example.exampleThrowsFunc.returns = 123
         example.exampleThrowsFunc.throws = ExampleError()
 
         // when / then
         XCTAssertThrowsError(try example.exampleThrows())
+        XCTAssertTrue(example.exampleThrowsFunc.called)
     }
 
     func testNoThrow() throws {
@@ -79,6 +81,23 @@ final class FuncMockCommonTests: XCTestCase {
         XCTAssertEqual(result, 123)
     }
 
+    func testNoArgsThrows() {
+        // given
+        example.exampleVoidThrowsFunc.throws = ExampleError()
+
+        // when / then
+        XCTAssertThrowsError(try example.exampleVoidThrows())
+        XCTAssertTrue(example.exampleVoidThrowsFunc.called)
+    }
+
+    func testNoArgsNoThrow() throws {
+        // when
+        try example.exampleVoidThrows()
+
+        // then
+        XCTAssertTrue(example.exampleVoidThrowsFunc.called)
+    }
+
     func testFixturableNoArgs() {
         // when
         let result = example.example()
@@ -122,6 +141,23 @@ final class FuncMockCommonTests: XCTestCase {
         XCTAssertTrue(example.exampleVoidFunc.called)
     }
 
+    func testNoArgsVoidThrows() {
+        // given
+        example.exampleArgVoidThrows.throws = ExampleError()
+
+        // when / then
+        XCTAssertThrowsError(try example.exampleArgVoidThrows(a0: 0))
+        XCTAssertTrue(example.exampleArgVoidThrows.called)
+    }
+
+    func testNoArgsVoidNoThrow() throws {
+        // when
+        try example.exampleArgVoidThrows(a0: 0)
+
+        // then
+        XCTAssertTrue(example.exampleArgVoidThrows.called)
+    }
+
     func testArgVoid() {
         // when
         example.exampleArgVoid(a0: 0)
@@ -157,8 +193,10 @@ private protocol Example {
     func exampleOpt() -> Int?
     func exampleOptThrows() throws -> Int?
     func exampleVoid()
+    func exampleVoidThrows() throws
     func exampleArg(a0: Int) -> Int
     func exampleArgVoid(a0: Int)
+    func exampleArgVoidThrows(a0: Int) throws
     func exampleClosure(_ closure: @escaping (Int) -> Void)
     func exampleNonFixturable() -> NonFixturable
 }
@@ -192,6 +230,11 @@ private final class ExampleMock: Example {
         exampleVoidFunc.call()
     }
 
+    lazy var exampleVoidThrowsFunc = FuncMock(self.exampleVoidThrows)
+    func exampleVoidThrows() throws {
+        try exampleVoidThrowsFunc.callThrows()
+    }
+
     lazy var exampleArg = FuncMock(self.exampleArg)
     func exampleArg(a0: Int) -> Int {
         exampleArg.call(a0)
@@ -200,6 +243,11 @@ private final class ExampleMock: Example {
     lazy var exampleArgVoid = FuncMock(self.exampleArgVoid)
     func exampleArgVoid(a0: Int) {
         exampleArgVoid.call(a0)
+    }
+
+    lazy var exampleArgVoidThrows = FuncMock(self.exampleArgVoidThrows)
+    func exampleArgVoidThrows(a0: Int) throws {
+        try exampleArgVoidThrows.callThrows(a0)
     }
 
     lazy var exampleClosure = FuncMock(self.exampleClosure)

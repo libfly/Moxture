@@ -29,8 +29,9 @@ public struct AnyFuncMock {
 
     @discardableResult
     public mutating func callThrows(_ args: Any) throws -> Any? {
+        let result: Any? = call(args)
         if let error = self.throws { throw error }
-        return call(args)
+        return result
     }
 
     public mutating func onCall(_ closure: @escaping (Any) -> Void) {

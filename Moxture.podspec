@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source           = { git: "https://github.com/Moxture/Moxture.git", tag: s.version.to_s }
 
   s.swift_version    = '5.0'
-  s.source_files     = 'Sources/**/*.swift'
+  s.source_files     = 'Moxture/**/*.swift'
 
   s.ios.deployment_target     = '9.0'
   s.osx.deployment_target     = '10.9'

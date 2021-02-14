@@ -50,7 +50,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit20() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:data:url:date:cgfloat:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:data:url:date:cgfloat:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -77,7 +77,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit19() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:data:url:date:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:data:url:date:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -103,7 +103,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit18() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:data:url:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:data:url:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -128,7 +128,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit17() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:data:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:data:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -152,7 +152,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit16() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:decimal:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -175,7 +175,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit15() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:uint64:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -197,7 +197,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit14() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:uint32:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -218,7 +218,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit13() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:uint16:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -238,7 +238,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit12() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:uint8:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -257,7 +257,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit11() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:uint:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -275,7 +275,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit10() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:int64:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -292,7 +292,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit9() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:int32:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -308,7 +308,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit8() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:int16:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -323,7 +323,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit7() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:int8:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -337,7 +337,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit6() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:string:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:string:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -350,7 +350,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit5() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:float:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:float:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -362,7 +362,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit4() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:double:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:double:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -373,7 +373,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit3() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:int:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:int:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -383,7 +383,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit2() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:bool2:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:bool2:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -392,7 +392,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit1() {
         // when
-        let example = makeFixture("", { _ in }, Example.init(bool:))
+        let example = makeFixture("fixture", { _ in }, Example.init(bool:))
 
         // then
         XCTAssertEqual(example.bool, .fixture)
@@ -400,7 +400,7 @@ final class FixturableTests: XCTestCase {
 
     func testInit0() {
         // when
-        let example = makeFixture("", { _ in }, Example.initialize)
+        let example = makeFixture("fixture", { _ in }, Example.initialize)
 
         // then
         XCTAssertNotEqual(example.bool, .fixture)

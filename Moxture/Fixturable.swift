@@ -6,7 +6,7 @@ public protocol Fixturable {
 
 public extension Fixturable {
     static var fixture: Self {
-        fixture(label: "", configure: { _ in })
+        fixture(label: "fixture", configure: { _ in })
     }
 
     static func fixture(label: String) -> Self {
@@ -14,6 +14,6 @@ public extension Fixturable {
     }
 
     static func fixture(configure: (inout Self) -> Void) -> Self {
-        fixture(label: "", configure: configure)
+        fixture(label: "fixture", configure: configure)
     }
 }

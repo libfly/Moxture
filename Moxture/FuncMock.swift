@@ -28,15 +28,20 @@ public struct FuncMock<Args, Return> {
     }
 
     public mutating func callThrows(_ args: Args) throws -> Return {
-        let result: Return = call(args)
+        calls.append(args)
+        onCall?(args)
         if let error = self.throws { throw error }
-        return result
+        guard let returns = returns else {
+            fatalError("returns is not set")
+        }
+        return returns
     }
 
     public mutating func callThrows(_ args: Args) throws -> Return? {
-        let result: Return? = call(args)
+        calls.append(args)
+        onCall?(args)
         if let error = self.throws { throw error }
-        return result
+        return returns
     }
 
     public mutating func onCall(_ closure: @escaping (Args) -> Void) {

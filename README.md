@@ -163,7 +163,7 @@ final class ExampleTests: XCTestCase {
         // given
 
         let mock = ExampleMock()
-        // intercept the function call, get completion closure argument and cal it with `true`
+        // intercept the function call, get completion closure argument and call it with `true`
         mock.onCall {
             $0(true)
         }
@@ -330,7 +330,7 @@ final class ExampleTests: XCTestCase {
         // then
 
         // now the property of the data structure is "custom string"
-        XCTAssertEqual(sut.lastData.string, .fixture)
+        XCTAssertEqual(sut.lastData.string, .fixture { $0.string = "custom string" })
         // ...and not equal to `.fixture` anymore
         XCTAssertNotEqual(sut.lastData.string, .fixture)
     }
@@ -390,12 +390,12 @@ final class ExampleTests: XCTestCase {
 
         // when
 
-        sut.update()
+        sut.update(.fixture(label: "result")) // send specific fixture as argument
 
         // then
 
-        // the fields in the generated fixture are also fixtures
-        XCTAssertEqual(mock.updateFunc.agrs, .fixture)
+        // assert by comparing with other fixtures
+        XCTAssertEqual(mock.updateFunc.agrs, .fixture(label: "result"))
     }
 }
 ```

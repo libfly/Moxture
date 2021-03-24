@@ -133,7 +133,7 @@ extension URL: Fixturable {
 extension Date: Fixturable {
     public static func fixture(label: String, configure: (inout Date) -> Void) -> Date {
         // 4070908800 - 1 Jan 2099
-        Date(timeIntervalSince1970: TimeInterval(abs(label.hashValue % 4070908800)))
+        Date(timeIntervalSince1970: TimeInterval(abs(Int64(label.hashValue) % 4070908800 as Int64)))
     }
 }
 

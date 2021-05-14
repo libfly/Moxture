@@ -25,185 +25,185 @@
 // as `FuncMock(self.function)` without explicitly specifying generic types.
 
 public extension FuncMock {
-    init(_ f: () -> Return) where Args == Void {
+    convenience init(_ f: () -> Return) where Args == Void {
         self.init()
     }
 
-    init(_ f: (Args) -> Return) {
+    convenience init(_ f: (Args) -> Return) {
         self.init()
     }
 
-    init<A0, A1>(_ f: (A0, A1) -> Return) where Args == (A0, A1) {
+    convenience init<A0, A1>(_ f: (A0, A1) -> Return) where Args == (A0, A1) {
         self.init()
     }
 
-    init<A0, A1, A2>(_ f: (A0, A1, A2) -> Return) where Args == (A0, A1, A2) {
+    convenience init<A0, A1, A2>(_ f: (A0, A1, A2) -> Return) where Args == (A0, A1, A2) {
         self.init()
     }
 
-    init<A0, A1, A2, A3>(_ f: (A0, A1, A2, A3) -> Return) where Args == (A0, A1, A2, A3) {
+    convenience init<A0, A1, A2, A3>(_ f: (A0, A1, A2, A3) -> Return) where Args == (A0, A1, A2, A3) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4>(_ f: (A0, A1, A2, A3, A4) -> Return) where Args == (A0, A1, A2, A3, A4) {
+    convenience init<A0, A1, A2, A3, A4>(_ f: (A0, A1, A2, A3, A4) -> Return) where Args == (A0, A1, A2, A3, A4) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5>(_ f: (A0, A1, A2, A3, A4, A5) -> Return) where Args == (A0, A1, A2, A3, A4, A5) {
+    convenience init<A0, A1, A2, A3, A4, A5>(_ f: (A0, A1, A2, A3, A4, A5) -> Return) where Args == (A0, A1, A2, A3, A4, A5) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6>(_ f: (A0, A1, A2, A3, A4, A5, A6) -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6>(_ f: (A0, A1, A2, A3, A4, A5, A6) -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6, A7>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7) -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7) -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6, A7, A8>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8) -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7, A8>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8) -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) {
-        self.init()
-    }
-}
-
-public extension FuncMock {
-    init(_ f: () throws -> Return) where Args == Void {
-        self.init()
-    }
-
-    init(_ f: (Args) throws -> Return) {
-        self.init()
-    }
-
-    init<A0, A1>(_ f: (A0, A1) throws -> Return) where Args == (A0, A1) {
-        self.init()
-    }
-
-    init<A0, A1, A2>(_ f: (A0, A1, A2) throws -> Return) where Args == (A0, A1, A2) {
-        self.init()
-    }
-
-    init<A0, A1, A2, A3>(_ f: (A0, A1, A2, A3) throws -> Return) where Args == (A0, A1, A2, A3) {
-        self.init()
-    }
-
-    init<A0, A1, A2, A3, A4>(_ f: (A0, A1, A2, A3, A4) throws -> Return) where Args == (A0, A1, A2, A3, A4) {
-        self.init()
-    }
-
-    init<A0, A1, A2, A3, A4, A5>(_ f: (A0, A1, A2, A3, A4, A5) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5) {
-        self.init()
-    }
-
-    init<A0, A1, A2, A3, A4, A5, A6>(_ f: (A0, A1, A2, A3, A4, A5, A6) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6) {
-        self.init()
-    }
-
-    init<A0, A1, A2, A3, A4, A5, A6, A7>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7) {
-        self.init()
-    }
-
-    init<A0, A1, A2, A3, A4, A5, A6, A7, A8>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8) {
-        self.init()
-    }
-
-    init<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) {
         self.init()
     }
 }
 
 public extension FuncMock {
-    init(_ f: () -> Return?) where Args == Void {
+    convenience init(_ f: () throws -> Return) where Args == Void {
         self.init()
     }
 
-    init(_ f: (Args) -> Return?) {
+    convenience init(_ f: (Args) throws -> Return) {
         self.init()
     }
 
-    init<A0, A1>(_ f: (A0, A1) -> Return?) where Args == (A0, A1) {
+    convenience init<A0, A1>(_ f: (A0, A1) throws -> Return) where Args == (A0, A1) {
         self.init()
     }
 
-    init<A0, A1, A2>(_ f: (A0, A1, A2) -> Return?) where Args == (A0, A1, A2) {
+    convenience init<A0, A1, A2>(_ f: (A0, A1, A2) throws -> Return) where Args == (A0, A1, A2) {
         self.init()
     }
 
-    init<A0, A1, A2, A3>(_ f: (A0, A1, A2, A3) -> Return?) where Args == (A0, A1, A2, A3) {
+    convenience init<A0, A1, A2, A3>(_ f: (A0, A1, A2, A3) throws -> Return) where Args == (A0, A1, A2, A3) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4>(_ f: (A0, A1, A2, A3, A4) -> Return?) where Args == (A0, A1, A2, A3, A4) {
+    convenience init<A0, A1, A2, A3, A4>(_ f: (A0, A1, A2, A3, A4) throws -> Return) where Args == (A0, A1, A2, A3, A4) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5>(_ f: (A0, A1, A2, A3, A4, A5) -> Return?) where Args == (A0, A1, A2, A3, A4, A5) {
+    convenience init<A0, A1, A2, A3, A4, A5>(_ f: (A0, A1, A2, A3, A4, A5) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6>(_ f: (A0, A1, A2, A3, A4, A5, A6) -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6>(_ f: (A0, A1, A2, A3, A4, A5, A6) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6, A7>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7) -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6, A7, A8>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8) -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7, A8>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) throws -> Return) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) {
         self.init()
     }
 }
 
 public extension FuncMock {
-    init(_ f: () throws -> Return?) where Args == Void {
+    convenience init(_ f: () -> Return?) where Args == Void {
         self.init()
     }
 
-    init(_ f: (Args) throws -> Return?) {
+    convenience init(_ f: (Args) -> Return?) {
         self.init()
     }
 
-    init<A0, A1>(_ f: (A0, A1) throws -> Return?) where Args == (A0, A1) {
+    convenience init<A0, A1>(_ f: (A0, A1) -> Return?) where Args == (A0, A1) {
         self.init()
     }
 
-    init<A0, A1, A2>(_ f: (A0, A1, A2) throws -> Return?) where Args == (A0, A1, A2) {
+    convenience init<A0, A1, A2>(_ f: (A0, A1, A2) -> Return?) where Args == (A0, A1, A2) {
         self.init()
     }
 
-    init<A0, A1, A2, A3>(_ f: (A0, A1, A2, A3) throws -> Return?) where Args == (A0, A1, A2, A3) {
+    convenience init<A0, A1, A2, A3>(_ f: (A0, A1, A2, A3) -> Return?) where Args == (A0, A1, A2, A3) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4>(_ f: (A0, A1, A2, A3, A4) throws -> Return?) where Args == (A0, A1, A2, A3, A4) {
+    convenience init<A0, A1, A2, A3, A4>(_ f: (A0, A1, A2, A3, A4) -> Return?) where Args == (A0, A1, A2, A3, A4) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5>(_ f: (A0, A1, A2, A3, A4, A5) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5) {
+    convenience init<A0, A1, A2, A3, A4, A5>(_ f: (A0, A1, A2, A3, A4, A5) -> Return?) where Args == (A0, A1, A2, A3, A4, A5) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6>(_ f: (A0, A1, A2, A3, A4, A5, A6) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6>(_ f: (A0, A1, A2, A3, A4, A5, A6) -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6, A7>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7) -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6, A7, A8>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7, A8>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8) -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8) {
         self.init()
     }
 
-    init<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) {
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) {
+        self.init()
+    }
+}
+
+public extension FuncMock {
+    convenience init(_ f: () throws -> Return?) where Args == Void {
+        self.init()
+    }
+
+    convenience init(_ f: (Args) throws -> Return?) {
+        self.init()
+    }
+
+    convenience init<A0, A1>(_ f: (A0, A1) throws -> Return?) where Args == (A0, A1) {
+        self.init()
+    }
+
+    convenience init<A0, A1, A2>(_ f: (A0, A1, A2) throws -> Return?) where Args == (A0, A1, A2) {
+        self.init()
+    }
+
+    convenience init<A0, A1, A2, A3>(_ f: (A0, A1, A2, A3) throws -> Return?) where Args == (A0, A1, A2, A3) {
+        self.init()
+    }
+
+    convenience init<A0, A1, A2, A3, A4>(_ f: (A0, A1, A2, A3, A4) throws -> Return?) where Args == (A0, A1, A2, A3, A4) {
+        self.init()
+    }
+
+    convenience init<A0, A1, A2, A3, A4, A5>(_ f: (A0, A1, A2, A3, A4, A5) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5) {
+        self.init()
+    }
+
+    convenience init<A0, A1, A2, A3, A4, A5, A6>(_ f: (A0, A1, A2, A3, A4, A5, A6) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6) {
+        self.init()
+    }
+
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7) {
+        self.init()
+    }
+
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7, A8>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8) {
+        self.init()
+    }
+
+    convenience init<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(_ f: (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) throws -> Return?) where Args == (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) {
         self.init()
     }
 }

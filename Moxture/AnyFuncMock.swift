@@ -20,7 +20,7 @@
 // SOFTWARE.
 //
 
-public struct AnyFuncMock {
+public final class AnyFuncMock {
 
     public var returns: Any?
 
@@ -41,24 +41,24 @@ public struct AnyFuncMock {
     public init() { }
 
     @discardableResult
-    public mutating func call(_ args: Any) -> Any? {
+    public func call(_ args: Any) -> Any? {
         calls.append(args)
         onCall?(args)
         return returns
     }
 
     @discardableResult
-    public mutating func callThrows(_ args: Any) throws -> Any? {
+    public func callThrows(_ args: Any) throws -> Any? {
         let result: Any? = call(args)
         if let error = self.throws { throw error }
         return result
     }
 
-    public mutating func onCall(_ closure: @escaping (Any) -> Void) {
+    public func onCall(_ closure: @escaping (Any) -> Void) {
         onCall = closure
     }
 
-    public mutating func reset() {
+    public func reset() {
         returns = nil
         `throws` = nil
         calls = []
@@ -67,6 +67,6 @@ public struct AnyFuncMock {
 }
 
 public extension AnyFuncMock {
-    mutating func call() -> Any? { call(()) }
-    mutating func callThrows() throws -> Any? { try callThrows(()) }
+    func call() -> Any? { call(()) }
+    func callThrows() throws -> Any? { try callThrows(()) }
 }

@@ -24,13 +24,13 @@
 // the mock returns `.fixture` as a default value.
 
 public extension FuncMock where Return: Fixturable {
-    mutating func call(_ args: Args) -> Return {
+    func call(_ args: Args) -> Return {
         call(args) ?? .fixture
     }
 }
 
 public extension FuncMock where Args == Void, Return: Fixturable {
-    mutating func call() -> Return {
+    func call() -> Return {
         call(()) ?? .fixture
     }
 }

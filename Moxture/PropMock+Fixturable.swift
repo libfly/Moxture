@@ -24,7 +24,7 @@
 // then it is not required to set `returns` property and `.fixture` is automatically returned.
 
 public extension PropMock.Getter where Return: Fixturable {
-    mutating func call() -> Return {
+    func call() -> Return {
         call() ?? .fixture
     }
 }

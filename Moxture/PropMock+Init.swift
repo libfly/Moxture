@@ -25,19 +25,19 @@
 // as `PropMock(\Type.property)` without explicitly specifying generic types.
 
 public extension PropMock {
-    init<T>(_ keyPath: ReferenceWritableKeyPath<T, Return>) {
+    convenience init<T>(_ keyPath: ReferenceWritableKeyPath<T, Return>) {
         self.init()
     }
 
-    init<T>(_ keyPath: KeyPath<T, Return>) {
+    convenience init<T>(_ keyPath: KeyPath<T, Return>) {
         self.init()
     }
 
-    init<T>(_ keyPath: ReferenceWritableKeyPath<T, Return?>) {
+    convenience init<T>(_ keyPath: ReferenceWritableKeyPath<T, Return?>) {
         self.init()
     }
 
-    init<T>(_ keyPath: KeyPath<T, Return?>) {
+    convenience init<T>(_ keyPath: KeyPath<T, Return?>) {
         self.init()
     }
 }

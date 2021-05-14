@@ -20,7 +20,7 @@
 // SOFTWARE.
 //
 
-public struct FuncMock<Args, Return> {
+public final class FuncMock<Args, Return> {
 
     public var returns: Return?
 
@@ -34,20 +34,20 @@ public struct FuncMock<Args, Return> {
 
     public var args: Args? { calls.first }
 
-    public mutating func call(_ args: Args) -> Return {
+    public func call(_ args: Args) -> Return {
         guard let returns = call(args) else {
             fatalError("returns is not set")
         }
         return returns
     }
 
-    public mutating func call(_ args: Args) -> Return? {
+    public func call(_ args: Args) -> Return? {
         calls.append(args)
         onCall?(args)
         return returns
     }
 
-    public mutating func callThrows(_ args: Args) throws -> Return {
+    public func callThrows(_ args: Args) throws -> Return {
         calls.append(args)
         onCall?(args)
         if let error = self.throws { throw error }
@@ -57,18 +57,18 @@ public struct FuncMock<Args, Return> {
         return returns
     }
 
-    public mutating func callThrows(_ args: Args) throws -> Return? {
+    public func callThrows(_ args: Args) throws -> Return? {
         calls.append(args)
         onCall?(args)
         if let error = self.throws { throw error }
         return returns
     }
 
-    public mutating func onCall(_ closure: @escaping (Args) -> Void) {
+    public func onCall(_ closure: @escaping (Args) -> Void) {
         onCall = closure
     }
 
-    public mutating func reset() {
+    public func reset() {
         returns = nil
         `throws` = nil
         calls = []

@@ -20,12 +20,12 @@
 // SOFTWARE.
 //
 
-public struct PropMock<Return> {
+public final class PropMock<Return> {
 
     public var set = Setter<Return>()
     public var get = Getter<Return>()
 
-    public struct Setter<Return> {
+    public final class Setter<Return> {
 
         public var calls: [Return?] = []
 
@@ -35,27 +35,27 @@ public struct PropMock<Return> {
 
         public var args: Return? { calls.first ?? nil }
 
-        public mutating func call(_ arg: Return) {
+        public func call(_ arg: Return) {
             calls.append(arg)
             onCall?(arg)
         }
 
-        public mutating func call(_ arg: Return?) {
+        public func call(_ arg: Return?) {
             calls.append(arg)
             onCall?(arg)
         }
 
-        public mutating func onCall(_ closure: @escaping (Return?) -> Void) {
+        public func onCall(_ closure: @escaping (Return?) -> Void) {
             onCall = closure
         }
 
-        public mutating func reset() {
+        public func reset() {
             calls = []
             onCall = nil
         }
     }
 
-    public struct Getter<Return> {
+    public final class Getter<Return> {
 
         public var returns: Return?
 
@@ -65,24 +65,24 @@ public struct PropMock<Return> {
 
         public var called: Bool { !calls.isEmpty }
 
-        public mutating func call() -> Return {
+        public func call() -> Return {
             guard let returns = call() else {
                 fatalError("returns is not set")
             }
             return returns
         }
 
-        public mutating func call() -> Return? {
+        public func call() -> Return? {
             calls.append(())
             onCall?()
             return returns
         }
 
-        public mutating func onCall(_ closure: @escaping () -> Void) {
+        public func onCall(_ closure: @escaping () -> Void) {
             onCall = closure
         }
 
-        public mutating func reset() {
+        public func reset() {
             returns = nil
             calls = []
             onCall = nil
@@ -94,7 +94,7 @@ public struct PropMock<Return> {
         set { get.returns = newValue }
     }
 
-    public mutating func reset() {
+    public func reset() {
         get.reset()
         set.reset()
     }

@@ -25,17 +25,7 @@ import XCTest
 
 final class AnyFuncMockTests: XCTestCase {
 
-    fileprivate var example: ExampleMock!
-
-    override func setUp() {
-        super.setUp()
-        example = .init()
-    }
-
-    override func tearDown() {
-        example = nil
-        super.tearDown()
-    }
+    private var example: ExampleMock = .init()
 
     func testReset() {
         // given

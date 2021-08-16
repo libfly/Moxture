@@ -164,7 +164,7 @@ final class ExampleTests: XCTestCase {
 
         let mock = ExampleMock()
         // intercept the function call, get completion closure argument and call it with `true`
-        mock.onCall {
+        mock.updateFunc.onCall {
             $0(true)
         }
         let sut = SystemUnderTest(example: mock)
@@ -176,12 +176,12 @@ final class ExampleTests: XCTestCase {
         // then
 
         // mock successfully called the completion closure
-        XCTAssertTrue(sut.updateFinished)
+        XCTAssertTrue(sut.updateFinished())
     }
 }
 ```
 
-### Handle trowing functions
+### Handle throwing functions
 
 For throwing functions we should use separate `FuncMock` method `callThrows(...)` (throwing functions can't be
 distinct from regular ones by Swift compiler):
@@ -194,7 +194,7 @@ protocol Example {
 class ExampleMock: Example {
     lazy var updateFunc = FuncMock(self.update)
     func update() throws {
-        try updateFunc.callThrows(completion)
+        try updateFunc.callThrows()
     }
 }
 
@@ -204,7 +204,7 @@ final class ExampleTests: XCTestCase {
 
         let mock = ExampleMock()
         // set error to make the function throw, it will be thrown as soon as `update()` is called
-        mock.throws = ExampleError()
+        mock.updateFunc.throws = ExampleError()
         let sut = SystemUnderTest(example: mock)
 
         // when / then
